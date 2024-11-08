@@ -1,80 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Selectors CSS</title>
-  <style>
-    /* Selector Element */
-    h1 {
-      color: blue;
-    }
-
-    /* Selector ID */
-    #header {
-      background-color: lightgreen;
-      padding: 10px;
-      text-align: center;
-    }
-
-    /* Selector Class */
-    .teks {
-      font-size: 16px;
-      color: green;
-    }
-
-    /* Selector Universal */
-    * {
-      margin: 0;
-      padding: 0;
-    }
-
-    /* Selector Group */
-    h1,
-    h2 {
-      color: gray;
-    }
-
-    /* Selector Descendant */
-    div p {
-      font-weight: bold;
-    }
-
-    /* Selector Child */
-    div>ul {
-      list-style: none;
-    }
-  </style>
-</head>
-
-<body>
-
-  <!-- Menggunakan Selector ID -->
-  <div id="header">
-    <h1>Judul Halaman</h1>
-  </div>
-
-  <!-- Menggunakan Selector Class -->
-  <p class="teks">Ini adalah paragraf dengan class "teks".</p>
-
-  <!-- Menggunakan Selector Element dan Selector Group -->
-  <h1>Ini Judul H1</h1>
-  <h2>Ini Judul H2</h2>
-
-  <!-- Menggunakan Selector Descendant -->
-  <div>
-    <p>Paragraf di dalam div</p>
-  </div>
-
-  <!-- Menggunakan Selector Child -->
-  <div>
-    <ul>
-      <li>Item 1</li>
-      <li>Item 2</li>
-    </ul>
-  </div>
-
-</body>
-
+<html>
+  <head>
+    <style>
+      /* 1. Selector Element | Mengatur style pada elemen h1 */
+      h1{
+        color: pink;
+      }
+      /* 2. Selector ID | Mengatur style pada elemen dengan id "header" */
+      #header {
+        background-color: peachpuff;
+      }
+      /* 3. Selector Class | Mengatur style pada elemen dengan class "teks" */
+      .teks {
+        font-size: 10px;
+      }
+      /* 4. Selector Universal | Mengatur margin dan padding pada semua elemen HTML */
+      * {
+          margin: 5px;
+          padding: 5px;
+        }
+      /* 5. Selector Group | Mengatur style pada elemen h1 dan h2 */
+      h2, h4 {
+          color: red;
+      }
+      /* 6. Selector Descendant | Mengatur style pada elemen p yang berada di dalam elemen div */
+      div p {
+          font-weight: bold;
+      }
+      /* 7. Selector Child | Mengatur style pada elemen ul yang menjadi anak langsung dari elemen div */
+      div > ul {
+          list-style: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Selector Element</h1>
+    <h2>Selector Group</h2>
+    <h3 id="header">Selector ID</h3>
+    <h4>Selector Group</h4>
+    <p class="teks">Selector Class</p>
+    <div>
+      <p>Selector Descendant</p>
+      <ul>
+        <li>Selector Child</li>
+        <li>Selector Child</li>
+        <li>Selector Child</li>
+      </ul>
+    </div>
+  </body>
 </html>
