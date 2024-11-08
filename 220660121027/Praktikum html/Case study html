@@ -15,7 +15,7 @@
 
         <!-- Gambar Profil -->
         <div class="text-center">
-            <img src="profil.jpg"
+            <img src="d:\WhatsApp Image 2024-11-08 at 11.23.56 PM.jpeg"
                 alt="Gambar Profil">
         </div>
 
@@ -82,8 +82,8 @@
         <!-- Link ke Media Sosial -->
         <h2 class="text-center">Ikuti Saya</h2>
         <p class="text-center">
-            <a href="https://www.instagram.com/username" target="_blank">Instagram</a> |
-            <a href="https://www.linkedin.com/in/username" target="_blank">LinkedIn</a>
+            <a href="https://www.instagram.com/faturohmanagi/profilecard/?igsh=MThvYXhncjJyazNuNg==" target="_blank">Instagram</a> |
+            <a href="https://github.com/AgiRaihan/220660121027" target="_blank">Github</a>
         </p>
 
         <!-- Footer -->
