@@ -47,7 +47,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="https://id.pinterest.com/pin/489907265719235497/" viewBox="0 0 56 24" fill="%23FFF"><path d="M28,0C18,0,12,8,0,8V24H56V8C44,8,38,0,28,0Z"/></svg>') repeat-x;
+            background: url('data:image/svg+xml,<svg xmlns="" viewBox="0 0 56 24" fill="%23FFF"><path d="M28,0C18,0,12,8,0,8V24H56V8C44,8,38,0,28,0Z"/></svg>') repeat-x;
             background-size: 56px 24px;
             opacity: 0.3;
             animation: floatClouds 20s linear infinite;
@@ -265,7 +265,7 @@
         <h1>Portofolio Pribadi</h1>
 
         <div class="text-center">
-            <img src="c:\Users\egina\Downloads\WhatsApp Image 2024-11-10 at 1.52.16 AM.jpeg" alt="c:\Users\egina\Downloads\WhatsApp Image 2024-11-10 at 1.52.16 AM.jpeg" class="c:\Users\egina\Downloads\WhatsApp Image 2024-11-10 at 1.52.16 AM.jpeg">
+            <img src="c:\Users\egina\Pictures\BA BG.jpg" alt="" class="">
         </div>
 
         <h2>Tentang Saya</h2>
@@ -311,7 +311,7 @@
 
         <h2>Video Karya</h2>
         <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
+            <iframe src="https://youtu.be/SWNnR2POpUE?si=oOhyGYlwdbXTrDkc" allowfullscreen></iframe>
         </div>
 
         <h2>Ikuti Saya</h2>
@@ -325,3 +325,167 @@
         </footer>
     </div>
 </body>
+</html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Pribadi - Anime Style</title>
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Variable CSS */
+        :root {
+            --primary-color: #000000;  /* Soft Pink */
+            --secondary-color: #FCF6BD;  /* Soft Yellow */
+            --accent-color: #D0F4DE;  /* Soft Mint */
+            --text-color: #4A4A4A;
+            --bg-color: #E6F3FF;
+        }
+
+        body {
+            font-family: 'Calibri', 'Trebuchet MS', sans-serif;
+            color: var(--text-color);
+            line-height: 1.6;
+            min-height: 100vh;
+            padding: 20px;
+            /* Anime-style background with overlay */
+            background: linear-gradient(
+                rgba(255, 255, 255, 0.9),
+                rgba(255, 255, 255, 0.85)
+            ),
+            url('/api/placeholder/1920/1080') center/cover fixed;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* Sakura petals animation */
+        @keyframes falling {
+            0% {
+                transform: translate(0, -10%) rotate(0deg);
+            }
+            100% {
+                transform: translate(100px, 100vh) rotate(360deg);
+            }
+        }
+
+        .sakura {
+            position: fixed;
+            top: -10%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .sakura::before {
+            content: '🌸';
+            position: absolute;
+            animation: falling 10s linear infinite;
+            font-size: 20px;
+            opacity: 0.7;
+        }
+
+        .sakura::after {
+            content: '🌸';
+            position: absolute;
+            left: 50%;
+            animation: falling 8s linear infinite;
+            font-size: 16px;
+            opacity: 0.5;
+        }
+
+        /* Container dengan efek glassmorphism */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.85);
+            border-radius: 20px;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Heading styles dengan anime touch */
+        h1 {
+            font-size: 4em;
+            background: linear-gradient(45deg, #00f7ff, #000000, #00fff2);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            padding: 20px;
+            margin-bottom: 40px;
+            text-align: center;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-size: 2.5em;
+            color: #000000;
+            text-align: center;
+            margin: 30px 0;
+            font-weight: 700;
+        }
+
+        /* Profile image dengan anime border */
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 5px solid #00c8fa;
+            box-shadow: 0 0 20px rgba(255, 153, 200, 0.5),
+                        0 0 40px rgba(255, 153, 200, 0.3);
+            margin: 20px auto;
+            display: block;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .profile-image:hover {
+            transform: scale(1.05);
+        }
+
+        /* Rest of your existing styles... */
+
+        /* Updated social links dengan anime style */
+        .social-links a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 50px;
+            background: linear-gradient(45deg, #ffe600, #ff0101);
+            transition: all 0.3s ease;
+            font-weight: 500;
+            box-shadow: 0 4px 15px rgba(255, 153, 200, 0.2);
+        }
+
+        .social-links a:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(255, 153, 200, 0.4);
+        }
+
+        /* Responsive design remains the same */
+        @media (max-width: 768px) {
+            /* Your existing responsive styles... */
+        }
+    </style>
+</head>
+<body>
+    <div class="sakura"></div>
+    <div class="container">
+        <!-- Rest of your existing HTML content... -->
+        <!-- Your existing content remains unchanged -->
+    </div>
+</body>
+</html>
